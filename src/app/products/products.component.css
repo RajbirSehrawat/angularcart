@@ -1,0 +1,8 @@
+#list{
+		width: 200px;
+		float: left;
+		margin: 10px;
+		border: 1px solid #cccc;
+		text-align: center;
+		padding: 5px;
+}

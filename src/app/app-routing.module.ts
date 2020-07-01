@@ -8,15 +8,17 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
-	{ path: '/', component: HomeComponent },
+	{ path: 'home', component: HomeComponent },
 	{ path: 'products', component: ProductsComponent },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'cart', component: CartComponent },
 	{ path: 'login', component: LoginComponent },
 	{ path: 'register', component: RegisterComponent },
 	{ path: 'product/:proId', component: ProductDetailComponent },
+	{ path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
