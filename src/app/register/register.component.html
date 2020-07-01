@@ -1,4 +1,5 @@
 	<div id="content">
+	<form [formGroup]='registerForm' (ngSubmit)= "onRegister(registerForm.value)">
 		<table style="width:350px" border="1" border-c>
 		 
 		  <tr>
@@ -6,18 +7,19 @@
 		  </tr>
 		  <tr>
 		    <td>User Email</td>
-		    <td><input type="text" /></td>  
+		    <td><input type="text" formControlName="username" /></td>  
 		  </tr>
 		   <tr>
 		    <td>Password</td>
-		    <td><input type="Password" /></td>  
+		    <td><input type="Password" formControlName="passwordd" /></td>  
 		  </tr>
 		   <tr>
 		    <td>Confirm Password</td>
-		    <td><input type="Password" /></td>  
+		    <td><input type="Password" formControlName="cpasswordd"/></td>  
 		  </tr>
 		  <tr>
 		    <td colspan="2" style="text-align: center;"><input type="submit" value="Register"></td> 
 		  </tr>
 		</table>
+		</form>
 	</div>
